@@ -5,3 +5,37 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --selective-yellow-50: #fffce7;
+  --selective-yellow-100: #fff9c1;
+  --selective-yellow-200: #fff086;
+  --selective-yellow-300: #ffdf41;
+  --selective-yellow-400: #ffcb0d;
+  --selective-yellow-500: #f6b400;
+  --selective-yellow-600: #d18700;
+  --selective-yellow-700: #a65f02;
+  --selective-yellow-800: #894a0a;
+  --selective-yellow-900: #743c0f;
+  --selective-yellow-950: #441e04;
+}
+
+main {
+  padding-top: min(8vh, 100px);
+  gap: 50px;
+  display: grid;
+  place-content: center;
+  background: linear-gradient(0deg, #ffffff, #eeeeee);
+}
+
+section {
+  scroll-margin-top: min(8vh, 100px);
+}
+
+article {
+  scroll-margin-top: min(8vh, 100px);
+}

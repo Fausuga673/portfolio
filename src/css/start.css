@@ -1,0 +1,160 @@
+.start {
+  display: grid;
+  width: min(90vw, 900px);
+  font-family: "Roboto Mono", monospace;
+}
+
+.start__about {
+  display: grid;
+  align-items: center;
+  grid-template-areas: "info photo";
+  height: 50vh;
+}
+
+.start__about--info span,
+.start__about--info-description span {
+  color: var(--selective-yellow-500);
+}
+
+.start__about--info-description span {
+  font-weight: 1000;
+}
+
+.start__about--info {
+  grid-area: info;
+  gap: 26px;
+  color: #242424;
+  height: 50%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+}
+
+.start__about--info-title {
+  color: #242424;
+  font-weight: 500;
+  font-size: min(4.5vw, 24px);
+  font-family: "Rubik Mono One", monospace;
+}
+
+.start__about--info-description {
+  font-size: min(5vw, 20px);
+}
+
+.start__about--info-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.start__about--info-buttons-button {
+  width: 110px;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: min(4vw, 14px);
+  color: var(--selective-yellow-950);
+  background: linear-gradient(
+    0deg,
+    var(--selective-yellow-600),
+    var(--selective-yellow-500)
+  );
+}
+
+.start__about--photo {
+  padding: 30px;
+  grid-area: photo;
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.start__about--photo-container {
+  width: min(40vw, 300px);
+  height: min(40vw, 300px);
+  border-radius: 100%;
+  background-size: 150%;
+  background-position: center;
+  background-image: url("src/img/me.jpg");
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.start__experience {
+  margin-top: min(6vh, 80px);
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.start__experience--title {
+  color: #242424;
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 500;
+  font-size: min(6vw, 26px);
+}
+
+.start__experience--description {
+  font-size: min(4vw, 18px);
+}
+
+.start__experience--description span {
+  font-weight: 1000;
+  color: var(--selective-yellow-500);
+}
+
+.start__experience--project {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.start__experience--project-photo {
+  width: auto;
+  display: grid;
+  height: min(30vw, 200px);
+}
+
+.start__experience--project-photo img {
+  width: min(40vw, 250px);
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.start__experience--project-description {
+  font-size: min(3.5vw, 16px);
+}
+
+@media only screen and (max-width: 768px) {
+  .start {
+    gap: 26px;
+  }
+
+  .start__about {
+    gap: 10px;
+    grid-template-areas:
+      "photo"
+      "info";
+    height: auto;
+  }
+
+  .start__about--info {
+    height: auto;
+    width: 100%;
+  }
+
+  .start__experience--project {
+    flex-direction: column;
+  }
+
+  .start__experience--project-description {
+    gap: 10px;
+  }
+
+  .start__experience--project-photo {
+    place-content: center;
+  }
+}

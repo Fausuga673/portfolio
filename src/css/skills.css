@@ -1,0 +1,51 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  height: 94vh;
+  width: min(90vw, 900px);
+}
+
+.skills__title {
+  width: 100%;
+  display: grid;
+  place-content: center;
+  height: 10vh;
+  text-align: center;
+  color: #242424;
+  font-weight: 500;
+  font-size: min(5vw, 30px);
+  font-family: "Rubik Mono One", monospace;
+}
+
+.skills__container {
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    "html . css . javascript"
+    ". typescript . react ."
+    "python . c . php"
+    ". mysql . git .";
+}
+
+.skills__container--skill {
+  width: min(15vw, 100px);
+  border-radius: 100%;
+  margin: auto;
+  transition: .2s ease;
+}
+
+.skills__container--skill:hover {
+    transform: scale(1.1);
+}
+
+.html {grid-area: html;}
+.css {grid-area: css;}
+.javascript {grid-area: javascript;}
+.typescript {grid-area: typescript;}
+.react {grid-area: react;}
+.python {grid-area: python;}
+.c {grid-area: c;}
+.php {grid-area: php;}
+.javascript {grid-area: javascript;}
+.mysql {grid-area: mysql;}
+.git {grid-area: git;}

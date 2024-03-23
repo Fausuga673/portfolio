@@ -1,0 +1,11 @@
+.footer {
+  height: 6vh;
+  display: grid;
+  place-content: center;
+}
+
+.footer__p {
+  color: #7c7c7c;
+  font-size: min(2.5vw, 13px);
+  font-family: "Roboto Mono", monospace;
+}

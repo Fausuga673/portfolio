@@ -1,0 +1,28 @@
+.header {
+  display: grid;
+  place-content: center;
+  height: min(8vh, 100px);
+  width: 100%;
+  z-index: 1000;
+  position: fixed;
+  background: #eeeeee;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(90vw, 900px);
+}
+
+.header__nav--item {
+  color: #242424;
+  text-decoration: none;
+  font-size: min(3.5vw, 16px);
+  font-family: "Roboto Mono", monospace;
+}
+
+.header__nav--item {
+  scroll-margin-top: 10vh;
+}
