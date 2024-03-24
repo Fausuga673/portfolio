@@ -1,7 +1,7 @@
 {
   "name": "portafolio",
-  "homepage": "https://fausuga673.github.io/portfolio",
-  "private": true,
+  "homepage": "https://fausuga673.github.io/portfolio/",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
