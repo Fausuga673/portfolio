@@ -1,11 +1,14 @@
-import curriculum from "../pdf/curriculum.pdf";
+import curriculum from "../assets/pdf/curriculum.pdf";
+import me from '../assets/img/me.jpg';
 
 function About() {
 
   return (
     <article className="start__about" id="about">
       <div className="start__about--photo">
-        <div className="start__about--photo-container"></div>
+        <div className="start__about--photo-container">
+          <img src={me} alt="" />
+        </div>
       </div>
       <ul className="start__about--info">
         <li className="start__about--info-title">

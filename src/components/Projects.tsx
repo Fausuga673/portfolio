@@ -1,9 +1,9 @@
 import { useState } from "react";
-import projectsJson from "../mocks/projects.json";
+import projectsList from "../mocks/projects.tsx";
 import "../css/projects.css";
 
 function Project() {
-  const [projects] = useState(projectsJson);
+  const [projects] = useState(projectsList);
 
   return (
     <>

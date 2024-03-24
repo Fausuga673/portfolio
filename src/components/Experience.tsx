@@ -1,3 +1,5 @@
+import maniMonkey from '../assets/img/manimonkey.jpg';
+
 function Experience() {
   return (
     <article className="start__experience" id="experience">
@@ -8,7 +10,7 @@ function Experience() {
       </p>
       <ul className="start__experience--project">
         <li className="start__experience--project-photo">
-          <img src="src/img/manimonkey.jpg" alt="" />
+          <img src={maniMonkey} alt="interfaz de maniMonkey" />
         </li>
         <li className="start__experience--project-description">
           <p>
