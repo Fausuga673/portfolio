@@ -15,7 +15,7 @@ function Experience() {
         <li className="start__experience--project-description">
           <p>
             Esta IPS maneja unos archivos que contienen la fecha de expedición,
-            nombre del paciente, la cantidad de residuos desechados por paciente
+            nombre del paciente y la cantidad de residuos desechados por paciente
             atendido.
             <br />
             <br />
